@@ -25,7 +25,7 @@ console.log(formOneEl);
 
 const cardsEl = document.querySelector('.cardBody')
 const letPrice = 0.21;
-let finalPrice = letPrice * memberKm;
+
 
 formOneEl.addEventListener('submit', function(e){
 e.preventDefault()
