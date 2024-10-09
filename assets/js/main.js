@@ -18,7 +18,7 @@ sarà anch’essa da scrivere in console.
 */
 
 
-const membersNameInputEl = document.getElementById('memberName')
+
 
 const formOneEl = document.getElementById('formOne')
 console.log(formOneEl);
@@ -34,7 +34,12 @@ const memberKm = e.target.memberKm.value
 const memberAge = e.target.memberAge.value
 const memberName = e.target.memberName.value
 
-console.log(memberAge, memberKm, memberName);
+
+
+console.log(memberName, memberKm, memberAge);
+
+
+
 
 
 
@@ -42,7 +47,7 @@ const memberEl = `
 <div class"member">
  <div class="col-4>
             <h4>nome passeggero</h4>
-            <p class="name_utente"></p>
+            <p class="name_utente">${memberName}</p>
         </div>
         <div class="col-2">
             <h4>Offerta</h4>
