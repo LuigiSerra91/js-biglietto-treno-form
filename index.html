@@ -8,29 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-<div class="text-center">
+<div class="text-center bg-secondary text-white">
     <h1>Calcola il prezzo del tuo biglietto</h1>
-    <form class="row g-3 needs-validation" novalidate>
+    <form id="formOne" class="row g-3 py-3">
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">Nome e Cognome </label>
-          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <label for="memberName" class="formName-label">Nome e Cognome </label>
+          <input type="text" name="memberName" class="memberName-control" id="memberName" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">km da percorrere</label>
-          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <label for="memberKm" class="formKm-label">km da percorrere</label>
+          <input type="text" name="memberKm" class="formKM-control" id="memberKm" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">fascia d'età</label>
-          <select id="age">
+            <label for="memberAge" class="formAge">fascia d'età</label>
+          <select name="memberAge" id="memberAge">
               
-              <option value="volvo">maggiorenne</option>
-              <option value="saab">minorenne</option>
+              <option id="memberAge" value="maggiorenne">maggiorenne</option>
+              <option id="memberAge" value="minorenne">minorenne</option>
               
             </select>
             
@@ -45,6 +45,14 @@
         </div>
        
       </form>
+</div>
+<h2>dettaglio passeggeri</h2>
+<div class="container d-flex mt-5 justify-content-around">
+    
+    <div class="row cardBody">
+
+       
+    </div>
 </div>
     
     <script src="./assets/js/main.js"></script>
