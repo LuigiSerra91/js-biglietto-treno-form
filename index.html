@@ -12,36 +12,28 @@
     <h1>Calcola il prezzo del tuo biglietto</h1>
     <form id="formOne" class="row g-3 py-3">
         <div class="col-md-4">
-          <label for="memberName" class="formName-label">Nome e Cognome </label>
-          <input type="text" name="memberName" class="memberName-control" id="memberName" value="" required>
+          <label for="memberName" class="memberName">Nome e Cognome </label>
+          <input type="text" name="memberName" class="memberName" id="memberName"  required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
-          <label for="memberKm" class="formKm-label">km da percorrere</label>
-          <input type="text" name="memberKm" class="formKM-control" id="memberKm" value="" required>
+          <label for="memberKm" class="memberKm">km da percorrere</label>
+          <input type="text" name="memberKm" class="MemberKm" id="memberKm" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
-            <label for="memberAge" class="formAge">fascia d'età</label>
-          <select name="memberAge" id="memberAge">
-              
-              <option id="memberAge" value="maggiorenne">maggiorenne</option>
-              <option id="memberAge" value="minorenne">minorenne</option>
-              
-            </select>
-            
-          <div class="valid-feedback">
-            Looks good!
+            <label for="memberAge" class="memberAge">Età del passeggero</label>
+            <input type="text" name="memberAge" class="memberAge" id="memberAge" required>
+         
           </div>
-        </div>
         
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Genera</button>
-          <button class="btn btn-primary" type="submit">Annulla</button>
+          <button id="submit" class="btn btn-primary" type="submit">Genera</button>
+          <button id="submit" class="btn btn-primary" type="submit">Annulla</button>
         </div>
        
       </form>
@@ -50,8 +42,11 @@
 <div class="container d-flex mt-5 justify-content-around">
     
     <div class="cardBody">
-
-       
+        <p id="costumer"></p>
+       <p id="ticket"></p>
+       <p id="out-price"></p>
+       <p id="random-code"></p>
+       <p id="random-seat"></p>
     </div>
 </div>
     
