@@ -13,21 +13,21 @@
     <form id="formOne" class="row g-3 py-3">
         <div class="col-md-4">
           <label for="memberName" class="memberName">Nome e Cognome </label>
-          <input type="text" name="memberName" class="memberName" id="memberName"  required>
+          <input type="text" name="memberName" placeholder="inserire il nome" class="memberName" id="memberName"  required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
           <label for="memberKm" class="memberKm">km da percorrere</label>
-          <input type="text" name="memberKm" class="MemberKm" id="memberKm" required>
+          <input type="text" name="memberKm" placeholder="inserire i km" class="MemberKm" id="memberKm" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
             <label for="memberAge" class="memberAge">Età del passeggero</label>
-            <input type="text" name="memberAge" class="memberAge" id="memberAge" required>
+            <input type="text" name="memberAge" placeholder="inserire l'età" class="memberAge" id="memberAge" required>
          
           </div>
         
@@ -38,7 +38,7 @@
        
       </form>
 </div>
-<h2>dettaglio passeggeri</h2>
+<h2 class="text-center mt-3">dettaglio passeggeri</h2>
 <div class="container d-flex mt-5 justify-content-around">
     
     
@@ -46,7 +46,7 @@
   <div class="card-body">
     <h5 class="card-title bg-primary">Il suo Biglietto</h5>
     <div class="cardBody">
-      <p id="costumer"></p>
+      <h4 id="costumer"></h4>
      <p id="ticket"></p>
      <p id="out-price"></p>
      <p id="random-code"></p>
